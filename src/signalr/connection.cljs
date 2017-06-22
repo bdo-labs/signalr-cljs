@@ -1,7 +1,9 @@
-(ns frontend.app
+(ns signalr.connection
   (:require [devtools.core :as devtools]
             [js.signalr]
             [clojure.string :as str]))
+
+(defn init [])
 
 ;; Create and expose connection
 (defn get-connection [url]

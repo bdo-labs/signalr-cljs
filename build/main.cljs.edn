@@ -1,2 +1,2 @@
-{:requires [frontend.app]
- :init-fns [frontend.app/init]}
+{:requires [signalr.connection]
+ :init-fns [signalr.connection/init]}
