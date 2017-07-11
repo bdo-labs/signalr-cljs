@@ -1,7 +1,7 @@
 # signalr-cljs
 [![Clojars Project](https://clojars.org/bdo-labs/signalr/latest-version.svg)](https://clojars.org/bdo-labs/signalr)
 
-A light wrapper around Microsoft's signalR. Wraps jQuery and 
+A light wrapper around Microsoft's signalR. Wraps jQuery and the signalR client library. 
 
 ## Usage
 Add this to your project.clj/build.boot file:
