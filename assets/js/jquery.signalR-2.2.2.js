@@ -9,8 +9,6 @@
  *
  */
 
-/// <reference path="Scripts/jquery-1.6.4.js" />
-/// <reference path="jquery.signalR.version.js" />
 (function ($, window, undefined) {
 
     var resources = {
@@ -989,7 +987,6 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 /*global window:false */
-/// <reference path="jquery.signalR.core.js" />
 
 (function ($, window, undefined) {
 
@@ -2952,7 +2949,6 @@
 
 
 /*global window:false */
-/// <reference path="jquery.signalR.core.js" />
 (function ($, undefined) {
     $.signalR.version = "2.2.2";
 }(window.jQuery));

@@ -1,2 +1,0 @@
-{:requires [signalr.connection]
- :init-fns [signalr.connection/init]}

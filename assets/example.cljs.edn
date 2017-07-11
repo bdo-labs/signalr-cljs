@@ -1,0 +1,2 @@
+{:requires [bdo-labs.signalr.examples]
+ :init-fns [bdo-labs.signalr.examples/init]}
