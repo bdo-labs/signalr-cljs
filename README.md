@@ -9,7 +9,7 @@ Add this to your project.clj/build.boot file:
 [bdo-labs/signalr "1.1.0"]
 ```
 
-And, remember to add the foreign libs in your project.clj or build.boot file like this. 
+And, remember to add the foreign libs in your project.clj or build.boot file like this. Optimization is set to whitespace. Be aware that jQuery and signalR adds about 127kb to your project. (minified)
 
 ```clojure
 :foreign-libs [{:file "jquery-1.6.4.js"
@@ -22,8 +22,10 @@ And, remember to add the foreign libs in your project.clj or build.boot file lik
 ```
 *Note: the path is where your compiled files is*
 
+
+
 ## Examples
-Examples can be found in src/signalr/example.cljs. 
+Examples can be found in [src/signalr/example.cljs.](https://github.com/bdo-labs/signalr-cljs/blob/master/src/bdo_labs/signalr/examples.cljs) 
 
 ## SignalR documentation
 Microsofts own documentation can be found [here](https://docs.microsoft.com/en-us/aspnet/signalr/).
