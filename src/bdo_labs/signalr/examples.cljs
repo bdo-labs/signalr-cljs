@@ -14,8 +14,8 @@
 (defn connect [connection hub-proxy]
   (let [conn (.start connection {:jsonp true})]
     (.done conn #(do
-                   (println (str "Done: " connection.id))))
-    (.fail conn #(println (str "Failed.." %)))))
+                   (.log js/console (str "Done: " connection.id))))
+    (.fail conn #(.log js/console (str "Failed.." %)))))
 
 ;; Call hub on server
 (defn call-hub [hub-proxy]
@@ -23,7 +23,7 @@
 
 ;; Init
 (defn init []
-  (let [connection (signalr/connect "http://localhost:12345/signalr")]
-    (let [hub-proxy (.createHubProxy connection "exampleHub")]
+  (let [connection (signalr/connect "http://localhost:20972/signalr")]
+    (let [hub-proxy (.createHubProxy connection "notificationHub")]
      (proxy-on hub-proxy)
      (connect connection hub-proxy))))
