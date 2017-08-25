@@ -22,12 +22,11 @@
 
 
 (deftask dev []
+  (set-env! :resource-paths #(conj % "html"))
   (comp
-   (set-env! :resource-paths #(conj % "html"))
-   (watch)
-   (cljs)
    (serve :port 8080)
-   (target)))
+   (watch)
+   (cljs)))
 
 
 (deftask release []
