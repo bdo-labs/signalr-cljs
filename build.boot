@@ -1,10 +1,10 @@
 (set-env!
  :source-paths    #{"src"}
  :resource-paths  #{"resources"}
- :dependencies    '[[adzerk/boot-cljs              "1.7.228-1"]
-                    [org.clojure/clojurescript     "1.9.671" :scope "provided"]
-                    [pandeiro/boot-http            "0.7.0" :scope "test"]
-                    [degree9/boot-semver           "1.7.0"    :scope "test"]])
+ :dependencies    '[[adzerk/boot-cljs "1.7.228-1"]
+                    [org.clojure/clojurescript "1.9.671" :scope "provided"]
+                    [pandeiro/boot-http "0.7.0" :scope "test"]
+                    [degree9/boot-semver "1.7.0" :scope "test"]])
 
 
 (require
