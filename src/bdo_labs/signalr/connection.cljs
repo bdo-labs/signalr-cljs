@@ -1,19 +1,17 @@
 (ns bdo-labs.signalr.connection
   (:require [js.signalr]))
 
-;;;; SignalR wrapper for cljs
-;;;; (enable-console-print!)
 
-;;; Create connection
-(defn connect [url]
+(defn connect
+  "Connect to the socket on [url]"
+  [url]
   (let [conn (js/$.hubConnection)]
    (set! (.-url conn) url)
    conn))
 
-;;; Print connection errors
-(defn add-errors [connection]
+
+(defn add-errors
+  "Log all [connection] errors"
+  [connection]
   (let [error (.error connection)]
-    (.fail error #(println error))))
-
-
-(defn init [])
+    (.fail error #(.error js/console error))))

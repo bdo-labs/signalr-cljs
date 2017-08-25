@@ -2,6 +2,10 @@
   (:require [clojure.string :as str]
             [bdo-labs.signalr.connection :as signalr]))
 
+
+(enable-console-print!)
+
+
 ;; Proxy methods
 ;; To be called from server
 (defn proxy-on [hub-proxy]
@@ -10,6 +14,7 @@
       (let [msg (.-Message message)]
         (println msg)))))
 
+
 ;; Connect to SignalR hub on server
 (defn connect [connection hub-proxy]
   (let [conn (.start connection {:jsonp true})]
@@ -17,9 +22,11 @@
                    (.log js/console (str "Done: " connection.id))))
     (.fail conn #(.log js/console (str "Failed.." %)))))
 
+
 ;; Call hub on server
 (defn call-hub [hub-proxy]
   (.invoke hub-proxy "getSomething"))
+
 
 ;; Init
 (defn init []
