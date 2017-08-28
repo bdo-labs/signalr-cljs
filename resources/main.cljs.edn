@@ -1,2 +1,3 @@
 {:requires [bdo-labs.signalr.connection]
- :compiler-options {:asset-path "js/app.out"}}
+ :compiler-options {:asset-path "js/app.out"
+                    :infer-externs true}}
