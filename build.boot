@@ -32,8 +32,7 @@
 (deftask release []
   (comp
    (version :patch 'inc)
-   (cljs :ids #{"main"}
-         :optimizations :simple)
+   (cljs :ids #{"main"})
    (target)
    (build-jar)
    identity))
