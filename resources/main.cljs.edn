@@ -1,5 +1,1 @@
-{:requires         [bdo-labs.signalr.connection]
- :compiler-options {:asset-path    "js/app.out"
-                    :optimizations :advanced
-                    :pseudo-names  true
-                    :pretty-print  true }}
+{:requires [bdo-labs.signalr.connection]}
